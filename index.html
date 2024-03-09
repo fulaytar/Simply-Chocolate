@@ -215,7 +215,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             Our <span class="color">products</span>
           </h2>
           <div
-            id="mySlider"
+            id="products"
             class="splide"
             aria-label="Splide Basic HTML Example"
           >
@@ -322,12 +322,171 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
         </div>
       </section>
+
+      <section class="sellers">
+        <div class="container">
+          <h2 class="sellers-title"><span class="color">Top</span> sellers</h2>
+          <ul class="sellers-list">
+            <li class="sellers-item">
+              <img
+                class="sellers-image"
+                src="./images/sellers_nuts.png"
+                alt="nuts"
+                width="320"
+              />
+            </li>
+            <li class="sellers-item">
+              <img
+                class="sellers-image"
+                src="./images/sellers_chocolate.png"
+                alt="chocolate"
+                width="320"
+              />
+            </li>
+            <li class="sellers-item">
+              <img
+                class="sellers-image"
+                src="./images/sellers_dark.png"
+                alt="dark_chocolate"
+                width="320"
+              />
+            </li>
+          </ul>
+          <button type="button" class="btn-buy btn-sellers">Buy now</button>
+        </div>
+      </section>
+
+      <section class="loved">
+        <div class="container">
+          <h2 class="loved-title">
+            <span class="color">Chocolate</span> is loved
+          </h2>
+
+          <div
+            id="review"
+            class="splide"
+            aria-label="Splide Basic HTML Example"
+          >
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="review-info">
+                    <div class="review-photo">
+                      <img
+                        width="80"
+                        src="./images/victoria.png"
+                        alt="victoria"
+                        class="review-person"
+                      />
+                    </div>
+                    <h2 class="review-name">Victoria Dobrzhanska</h2>
+                    <p class="review-comment">
+                      I love this chocolate bar. Perfect combination of light
+                      crispy wafer, covered in a thin layer chocolate.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="review-info">
+                    <div class="review-photo">
+                      <img
+                        width="80"
+                        src="./images/nazar.png"
+                        alt="Nazar"
+                        class="review-person"
+                      />
+                    </div>
+
+                    <h2 class="review-name">Nazar Babenko</h2>
+                    <p class="review-comment">
+                      This chocolate confection is a delight! A delight! The
+                      wafer is light and crisp, the hazelnut cream is smooth,
+                      and the chocolate is good.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="review-info">
+                    <div class="review-photo">
+                      <img
+                        width="80"
+                        src="./images/olena.png"
+                        alt="Olena"
+                        class="review-person"
+                      />
+                    </div>
+
+                    <h2 class="review-name">Olena Kampusch</h2>
+                    <p class="review-comment">
+                      Chocolate is a family favourite treat. Love the delicious
+                      smooth chocolate and the creaminess inside. The wafer is
+                      soft but crunchy.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="review-info">
+                    <div class="review-photo">
+                      <img
+                        width="80"
+                        src="./images/natalia.png"
+                        alt="Natalia"
+                        class="review-person"
+                      />
+                    </div>
+
+                    <h2 class="review-name">Natalia Sush</h2>
+                    <p class="review-comment">
+                      The chocolate assortment was delicious. Both dark and milk
+                      chocolate pieces were smooth and just right on the
+                      sweetness level.
+                    </p>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="review-info">
+                    <div class="review-photo">
+                      <img
+                        width="80"
+                        src="./images/danila.png"
+                        alt="Danila"
+                        class="review-person"
+                      />
+                    </div>
+                    <h2 class="review-name">Danilo Nottingham</h2>
+                    <p class="review-comment">
+                      This is delicious. It so rich and flavorful you don’t need
+                      to use as many. I love topping an apple with almond butter
+                      and these chips for a snack.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <button type="button" class="add-review">Leave a review</button>
+        </div>
+      </section>
+
+      <section class="subscribe">
+        <div class="container container-subscribe">
+          <h2 class="subsc-title">Explore our new chocolate first</h2>
+          <p class="review-details">
+            From the velvety texture to the rich and complex flavor, our New
+            Chocolate is a true indulgence that will leave you craving more.
+            Made with only the finest ingredients and handcrafted with the
+            utmost care, each piece is a work of art that is sure to please.
+          </p>
+          <button type="button" class="btn-buy btn-scr">Subscribe</button>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
-    <script type="module" src="./js/chocolate.js"></script>
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
+    <script type="module" src="./js/chocolate.js"></script>
+    <script type="module" src="./js/person.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 //тут створили слайдер
-const persons = new Splide('#review', {
+const splide = new Splide('#products', {
     type: 'loop',
     perPage: 1,
     speed: 600,
@@ -8,8 +8,8 @@ const persons = new Splide('#review', {
     
 });
 //тут шукаємо всі елементи
-      const personBox=document.getElementById('review')
-      const thumbnails = personBox.getElementsByClassName("thumbnail");
+
+      const thumbnails = document.getElementsByClassName("thumbnail");
       let current;
       //ініціалізація
       for (var i = 0; i < thumbnails.length; i++) {
@@ -18,12 +18,12 @@ const persons = new Splide('#review', {
       //по індексу шукаємо
       function initThumbnail(thumbnail, index) {
         thumbnail.addEventListener("click", function () {
-          persons.go(index);
+          splide.go(index);
         });
       }
 
-      persons.on("mounted move", function () {
-        var thumbnail = thumbnails[persons.index];
+      splide.on("mounted move", function () {
+        var thumbnail = thumbnails[splide.index];
 
         if (thumbnail) {
           if (current) {
@@ -35,6 +35,8 @@ const persons = new Splide('#review', {
         }
       });
 
-persons.mount();
+splide.mount();
       
+
+
 
