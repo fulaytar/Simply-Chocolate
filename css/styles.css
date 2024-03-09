@@ -571,5 +571,8 @@ display: block;
     .image-taste {
     margin: 0px auto 25px auto;
     }
+    .review-details{
+        width: auto;
+    }
     
 }
