@@ -1,0 +1,213 @@
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+}
+
+/* Обнулення дефолтних маржинів для заголовків та параграфів */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Обнулення дефолтних маржинів і лівого падіння для списків */
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+/* Зроблення зображень блочними елементами */
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+body{
+    background-color: #FAFAFA;
+    font-family: Montserrat,sans-serif;
+
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 767px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.link_logo{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.28;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.svg-open-modal{
+    color: transparent;
+    display: block;
+}
+.btn-open-modal{
+    stroke: #111111;
+    transition: stroke 200ms ease-in;
+    border: none;
+    background-color: inherit;
+    padding: 0;
+    cursor: pointer;
+    line-height: 0;
+}
+.btn-open-modal:hover{
+    stroke: #FD9222;
+}
+.header_margin{
+margin-bottom: 14px;
+}
+
+.scroll-svg{
+    fill:#FD9222;
+    line-height: 0;
+    transition: fill 200ms ease-in;
+}
+.eclipse{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 6px;
+    border-radius: 50%;
+    transition: background-color 200ms ease-in;
+}
+
+.hero-container{
+    padding: 395px 20px 21px 20px;
+}
+.hero-title{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-bottom: 32px;
+    text-align: left;
+}
+.hero{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 72px;
+}
+.hero-container{
+    background-image: linear-gradient(180.00deg, rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4) 100%), url('../images/mobile/hero_mob.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+
+.hero-btns{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+.btn-buy{
+    border: none;
+    border-radius: 100px;
+    background: rgb(253, 146, 34);
+    width: 120px;
+    height: 41px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.21;
+    letter-spacing: 0%;
+    margin-right: 14px;
+    transition: color 200ms ease-in, background-color 200ms ease-in;
+}
+.btn-buy:hover{
+    background-color: #FCF1E0;
+    color: rgb(253, 146, 34);
+}
+
+.btn-how{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 100px;
+    width: 159px;
+    height: 41px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.21;
+    background-color: transparent;
+    transition: color 200ms ease-in, background-color 200ms ease-in,border-color 200ms ease-in ;
+}
+.btn-how:hover{
+    border-color:  rgb(253, 146, 34);
+    background-color: #FAFAFA;
+    color: #FD9222;
+}
+
+.link-scroll{
+    background-color: transparent;
+    width: 130px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    border-radius: 44px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-align: left;
+    transition: color 200ms ease-in,background-color 200ms ease-in;
+}
+
+
+.link-scroll:hover {
+    color: #FD9222;
+    background-color: #fafafa;
+}
+
+.link-scroll:hover .eclipse {
+    background-color: #FD9222;
+}
+
+.link-scroll:hover .scroll-svg {
+    fill: #FFFFFF;
+}
+
+
+@media screen and (max-width:372px) {
+    .hero-btns {
+        row-gap: 14px;
+        margin-bottom: 14px;
+    }
+}
