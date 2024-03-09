@@ -38,7 +38,9 @@ button {
 body{
     background-color: #FAFAFA;
     font-family: Montserrat,sans-serif;
-
+}
+section{
+    margin-bottom: 72px;
 }
 
 .container{
@@ -117,7 +119,6 @@ margin-bottom: 14px;
 .hero{
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 72px;
 }
 .hero-container{
     background-image: linear-gradient(180.00deg, rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4) 100%), url('../images/mobile/hero_mob.png');
@@ -205,9 +206,162 @@ margin-bottom: 14px;
 }
 
 
+.about-paddind{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.about{
+    background-color: #1E1823;
+}
+.icon-about{
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 365px;
+    margin-bottom: 22px;
+}
+.icon-about-svg{
+    fill:#FD9222;
+    line-height: 0;
+}
+.about-title{
+color: rgb(255, 255, 255);
+font-size: 18px;
+font-weight: 600;
+line-height: 1.22;
+text-align: left;
+margin-bottom: 18px;
+}
+.about-details{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.21;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+.list-about{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+
+.color{
+    color:#FD9222;
+}
+.choice-title{
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 283px;
+    margin-bottom: 24px;
+}
+.choice-details{
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.taste-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.taste-item{
+    border: 1px solid rgb(253, 146, 34);
+    border-radius: 15px;
+    padding: 28px;
+}
+.image-taste{
+    margin: 0px 27px 25px 28px;
+}
+.image-taste-info{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    text-align: left;
+    text-transform: uppercase;
+}
+.taste-list li:first-child{
+    background-color: #FD9222;
+    color: rgb(255, 255, 255);
+}
+.taste-list li:nth-child(even){
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
+}
+.taste-list li:nth-child(odd):not(:first-child) {
+    background-color: rgb(30, 24, 35);
+    color: rgb(255, 255, 255);
+}
+.made-title{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.made-photo{
+    display: block;
+    height: 500px;
+    background-image: url(../images/mobile/made_mob.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    margin-bottom: 20px;
+}
+
+.made-details{
+    padding: 20px 30px;
+}
+.made-details-title{
+color: rgb(17, 17, 17);
+font-size: 18px;
+font-weight: 600;
+line-height: 1.33;
+text-align: left;
+}
+.made-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+    list-style-type: disc;
+}
+.made-item{
+    padding-left: 4px;
+    color: rgb(17, 17, 17);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    list-style-position:initial;
+}
+
+
+
+
 @media screen and (max-width:372px) {
     .hero-btns {
         row-gap: 14px;
         margin-bottom: 14px;
+    }
+    .image-taste {
+    margin: 0px auto 25px auto;
     }
 }
