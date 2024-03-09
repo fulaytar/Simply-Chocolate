@@ -552,6 +552,8 @@ display: block;
     letter-spacing: -0.02em;
     text-align: center;
     width: 326px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 24px;
 }
 .btn-scr{
