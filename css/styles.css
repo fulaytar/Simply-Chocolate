@@ -44,8 +44,6 @@ section{
 }
 
 .container{
-    margin: 0 auto;
-    max-width: 767px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -207,7 +205,7 @@ margin-bottom: 32px;
 }
 
 
-.about-paddind{
+.about-padding{
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -262,7 +260,7 @@ margin-bottom: 18px;
     letter-spacing: -0.03em;
     text-align: center;
     text-transform: uppercase;
-    width: 283px;
+    max-width: 411px;
     margin-bottom: 24px;
 }
 .choice-details{
@@ -273,6 +271,9 @@ margin-bottom: 18px;
     letter-spacing: -0.02em;
     text-align: center;
     margin-bottom: 32px;
+    max-width: 486px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .taste-list{
@@ -326,7 +327,7 @@ margin-bottom: 18px;
 .made-photo{
     display: block;
     height: 500px;
-    background-image: url(../images/mobile/made_mob.png);
+    background-image: url(../images/made-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center center;
@@ -335,6 +336,7 @@ margin-bottom: 18px;
 
 .made-details{
     padding: 20px 30px;
+    background-color: #FFFFFF;
 }
 .made-details-title{
 color: rgb(17, 17, 17);
@@ -342,6 +344,7 @@ font-size: 18px;
 font-weight: 600;
 line-height: 1.33;
 text-align: left;
+margin-bottom: 20px;
 }
 .made-list{
     display: flex;
@@ -357,7 +360,7 @@ text-align: left;
     line-height: 18px;
     letter-spacing: -0.02em;
     text-align: left;
-    list-style-position:initial;
+    list-style-position: inside;
 }
 
 .products-title{
@@ -448,7 +451,9 @@ text-align: left;
         text-transform: uppercase;
         margin-bottom: 32px;
 }
-
+.sellers-list li:last-child{
+    display: none;
+}
 .sellers-list{
     display: flex;
     flex-direction: column;
@@ -612,18 +617,19 @@ display: block;
     row-gap: 4px;
 }
 .contacts-info{
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 32px;
     margin-bottom: 32px;
+}
+.footer-contacts{
+    display: flex;
+    justify-content:space-between;
 }
 .link-soc{
     display: flex;
     width: 58px;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 .soc-item svg {
     stroke: rgb(255, 255, 255);;
@@ -701,4 +707,116 @@ a:hover{
     .taste-item{
         margin: 0;
     }
+}
+
+@media screen and (min-width:768px){
+    .container{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .header_margin{
+        margin-bottom: 24px;
+    }
+    .hero-container{
+        padding: 671px 40px 40px 40px;
+    }
+    .hero-title{
+        font-size: 28px;
+        line-height: 1.21;
+        max-width: 484px;
+    }
+    .hero-btns {
+        margin-bottom: 0; 
+    }
+    section{
+        margin-bottom: 50px;
+    }
+    .about-padding{
+        padding-top: 50px;
+        padding-bottom:50px ;
+    }
+.list-about{
+    gap: 50px 60px;
+    flex-wrap: wrap;
+}
+    .about-item {
+        max-width: 308px;
+    }
+    .choice-title{
+        font-size: 24px;
+        line-height: 1.16;
+        margin-bottom: 28px
+    }
+    .choice-details{
+        margin-bottom: 50px;
+    }
+    .taste-item{
+        max-width: 336px;
+    }
+    .taste-list{
+        gap: 32px;
+    }
+    .container-choice{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .container-made{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .made-details-title{
+        max-width: 350px;
+        margin-bottom: 28px;
+    }
+    .made-details{
+        padding: 32px;
+    }
+    .products-container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .hero-container {
+            background-image: linear-gradient(180.00deg, rgba(17, 17, 17, 0), rgba(17, 17, 17, 0.4) 100%), url(../images//tablet/tablet-hero-bg.webp);
+    }
+    .sellers-item{
+        max-width: 344px;
+    }
+    .sellers-list{
+        flex-direction: row;
+        row-gap: 0;
+        column-gap: 16px;
+        justify-content: center;
+    }
+    .sellers-container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .sellers-title{
+        margin-bottom: 50px;
+    }
+    .loved-container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .container-subscribe{
+        padding: 72px 151px;
+    }
+    .container-subscribe {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/tablet/subcribe_tablet.webp);
+    }
+    .footer-container{
+        padding: 50px 32px;
+    }
+    .contacts-info{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-contacts{
+        column-gap: 50px;
+    }
+    .contacts-info {
+            padding-bottom: 50px;
+            margin-bottom: 24px;
+        }
 }
