@@ -131,7 +131,9 @@ margin-bottom: 14px;
 .hero-btns{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 32px;
+}
+.hero-btns li:first-child{
+margin-bottom: 32px;
 }
 .btn-buy{
     border: none;
@@ -277,14 +279,19 @@ margin-bottom: 18px;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    flex-wrap: wrap;
 }
 .taste-item{
     border: 1px solid rgb(253, 146, 34);
     border-radius: 15px;
     padding: 28px;
+    max-width: 270px;
+    margin: 0 auto;
 }
 .image-taste{
-    margin: 0px 27px 25px 28px;
+    margin-bottom: 25px ;
+    margin-left: auto;
+    margin-right: auto;
 }
 .image-taste-info{
     font-size: 14px;
@@ -294,6 +301,7 @@ margin-bottom: 18px;
     text-align: left;
     text-transform: uppercase;
 }
+
 .taste-list li:first-child{
     background-color: #FD9222;
     color: rgb(255, 255, 255);
@@ -354,6 +362,7 @@ text-align: left;
 
 .products-title{
     text-align: center;
+    margin-bottom: 32px;
 }
 
 
@@ -362,6 +371,8 @@ text-align: left;
 .info{
     padding: 32px 52px;
     background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
 }
 .info-name{
     color: rgb(17, 17, 17);
@@ -446,7 +457,6 @@ text-align: left;
 }
 .sellers-image{
     width: 100%;
-    max-width: 344px;;
     object-fit: cover;
     border-radius: 15px;
 }
@@ -661,5 +671,34 @@ a:hover{
     .review-details{
         width: auto;
     }
-    
+}
+
+@media screen and (min-width:372px){
+.review-details{
+    width: auto;
+    max-width: 467px;
+}
+}
+
+@media screen and (min-width:503px){
+    .hero-btns li:first-child{
+        margin-bottom: 0;
+    }
+    .hero-btns{
+        margin-bottom: 32px;
+    }
+    .hero-btns li:nth-child(2){
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width:620px){
+    .taste-list{
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center
+    }
+    .taste-item{
+        margin: 0;
+    }
 }
