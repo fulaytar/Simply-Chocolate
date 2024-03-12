@@ -1,11 +1,23 @@
+
+
 //тут створили слайдер
 const splide = new Splide('#products', {
-    type: 'loop',
-    perPage: 1,
-    speed: 600,
-    easing: 'ease-in',
-    pagination: true,
+  type: 'loop',
+  perPage: 2,
+  perMove: 1,
+  updateOnMove: true,
+  speed: 600,
+  easing: 'ease-in',
+  pagination: true,
+  //властивості до 767
+  breakpoints: {
+	767: {
+      perPage: 1,
+      padding: '10%',
+	},
     
+  }
+
 });
 //тут шукаємо всі елементи
 

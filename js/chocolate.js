@@ -1,11 +1,22 @@
+
+
 //тут створили слайдер
 const persons = new Splide('#review', {
-    type: 'loop',
-    perPage: 1,
-    speed: 600,
-    easing: 'ease-in',
-    pagination: true,
+  type: 'loop',
+  perPage: 2,
+  perMove: 1,
+  updateOnMove: true,
+  speed: 600,
+  easing: 'ease-in',
+  pagination: true,
+  //властивості до 767
+  breakpoints: {
+	767: {
+      perPage: 1,
+	},
     
+  }
+
 });
 //тут шукаємо всі елементи
       const personBox=document.getElementById('review')
@@ -37,4 +48,3 @@ const persons = new Splide('#review', {
 
 persons.mount();
       
-

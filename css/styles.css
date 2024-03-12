@@ -372,10 +372,11 @@ margin-bottom: 20px;
 /* настройки галереї */
 
 .info{
-    padding: 32px 52px;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .info-name{
     color: rgb(17, 17, 17);
@@ -816,7 +817,15 @@ a:hover{
         column-gap: 50px;
     }
     .contacts-info {
-            padding-bottom: 50px;
-            margin-bottom: 24px;
-        }
+        padding-bottom: 50px;
+        margin-bottom: 24px;
+    }
+    .info{
+        margin-right: 18px;
+        margin-left: 18px;
+    }
+    .review-info{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
