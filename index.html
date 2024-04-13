@@ -21,6 +21,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -244,113 +248,116 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           <h2 class="products-title">
             Our <span class="color">products</span>
           </h2>
-          <div
-            id="products"
-            class="splide"
-            aria-label="Splide Basic HTML Example"
-          >
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <div class="info">
-                    <img
-                      class="info-image"
-                      src="./images/mobile/orange.png"
-                      alt="orange"
-                    />
-                    <h3 class="info-name">Orange</h3>
-                    <p class="info-details">Dark chocolate</p>
-                    <span class="cost"> 45 UAH</span>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="info">
-                    <img
-                      class="info-image"
-                      src="./images/mobile/granbar.png"
-                      alt="APPLE&CRANBERRY"
-                    />
-                    <h3 class="info-name">Apple&Cranberry</h3>
-                    <p class="info-details">Milk chocolate</p>
-                    <span class="cost"> 50 UAH</span>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="info">
-                    <img
-                      class="info-image"
-                      src="./images/mobile/lime.png"
-                      alt="lime&sea salt"
-                    />
-                    <h3 class="info-name">lime&sea salt</h3>
-                    <p class="info-details">Dark chocolate</p>
-                    <span class="cost"> 66 UAH</span>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="info">
-                    <img
-                      class="info-image"
-                      src="./images/mobile/pineapple.png"
-                      alt="pineapple"
-                    />
-                    <h3 class="info-name">Pineapple</h3>
-                    <p class="info-details">Dark chocolate</p>
-                    <span class="cost"> 54 UAH</span>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="info">
-                    <img
-                      class="info-image"
-                      src="./images/mobile/classicmilk.png"
-                      alt="classicmilk"
-                    />
-                    <h3 class="info-name">Classic</h3>
-                    <p class="info-details">Milk chocolate</p>
-                    <span class="cost"> 45 UAH</span>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="info">
-                    <img
-                      class="info-image"
-                      src="./images//mobile/honey.png"
-                      alt="classic white"
-                    />
-                    <h3 class="info-name">Honey</h3>
-                    <p class="info-details">White chocolate</p>
-                    <span class="cost"> 50 UAH</span>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="info">
-                    <img
-                      class="info-image"
-                      src="./images/mobile//roasted_fruits.png"
-                      alt="roasted fruits"
-                    />
-                    <h3 class="info-name">Roasted fruits</h3>
-                    <p class="info-details">Dark chocolate</p>
-                    <span class="cost"> 66 UAH</span>
-                  </div>
-                </li>
-                <li class="splide__slide">
-                  <div class="info">
-                    <img
-                      class="info-image"
-                      src="./images//mobile/classic.png"
-                      alt="classic white"
-                    />
-                    <h3 class="info-name">Classic</h3>
-                    <p class="info-details">White chocolate</p>
-                    <span class="cost"> 54 UAH</span>
-                  </div>
-                </li>
-              </ul>
+
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="info">
+                  <img
+                    class="info-image"
+                    src="./images/mobile/orange.png"
+                    alt="orange"
+                  />
+                  <h3 class="info-name">Orange</h3>
+                  <p class="info-details">Dark chocolate</p>
+                  <span class="cost"> 45 UAH</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info">
+                  <img
+                    class="info-image"
+                    src="./images/mobile/granbar.png"
+                    alt="APPLE&CRANBERRY"
+                  />
+                  <h3 class="info-name">Apple&Cranberry</h3>
+                  <p class="info-details">Milk chocolate</p>
+                  <span class="cost"> 50 UAH</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info">
+                  <img
+                    class="info-image"
+                    src="./images/mobile/lime.png"
+                    alt="lime&sea salt"
+                  />
+                  <h3 class="info-name">lime&sea salt</h3>
+                  <p class="info-details">Dark chocolate</p>
+                  <span class="cost"> 66 UAH</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info">
+                  <img
+                    class="info-image"
+                    src="./images/mobile/pineapple.png"
+                    alt="pineapple"
+                  />
+                  <h3 class="info-name">Pineapple</h3>
+                  <p class="info-details">Dark chocolate</p>
+                  <span class="cost"> 54 UAH</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info">
+                  <img
+                    class="info-image"
+                    src="./images/mobile/classicmilk.png"
+                    alt="classicmilk"
+                  />
+                  <h3 class="info-name">Classic</h3>
+                  <p class="info-details">Milk chocolate</p>
+                  <span class="cost"> 45 UAH</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info">
+                  <img
+                    class="info-image"
+                    src="./images//mobile/honey.png"
+                    alt="classic white"
+                  />
+                  <h3 class="info-name">Honey</h3>
+                  <p class="info-details">White chocolate</p>
+                  <span class="cost"> 50 UAH</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info">
+                  <img
+                    class="info-image"
+                    src="./images/mobile//roasted_fruits.png"
+                    alt="roasted fruits"
+                  />
+                  <h3 class="info-name">Roasted fruits</h3>
+                  <p class="info-details">Dark chocolate</p>
+                  <span class="cost"> 66 UAH</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="info">
+                  <img
+                    class="info-image"
+                    src="./images//mobile/classic.png"
+                    alt="classic white"
+                  />
+                  <h3 class="info-name">Classic</h3>
+                  <p class="info-details">White chocolate</p>
+                  <span class="cost"> 54 UAH</span>
+                </div>
+              </div>
             </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev color"></div>
+            <div class="swiper-button-next color"></div>
           </div>
-          <div id="pagination" class="splide__pagination"></div>
         </div>
       </section>
 
@@ -584,6 +591,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <script src="
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
 "></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="./js/chocolate.js"></script>
     <script type="module" src="./js/person.js"></script>
   </body>

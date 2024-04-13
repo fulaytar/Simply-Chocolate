@@ -38,6 +38,12 @@ body {
   background-color: #fafafa;
   font-family: Montserrat, sans-serif;
 }
+.color {
+  color: #fd9222;
+}
+.swiper-pagination-bullet-active {
+  background-color: #fd9222;
+}
 section {
   margin-bottom: 72px;
 }
@@ -374,6 +380,10 @@ section {
   border-radius: 15px;
   margin-left: 5px;
   margin-right: 5px;
+  max-width: 335px;
+  height: 415px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .info-name {
   color: rgb(17, 17, 17);
@@ -665,6 +675,14 @@ a:hover {
 .header-soc {
   display: none;
 }
+.swiper {
+  height: 453px;
+}
+.info-image {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media screen and (max-width: 372px) {
   .hero-btns {
@@ -717,6 +735,7 @@ a:hover {
   .hero-container {
     padding: 671px 40px 40px 40px;
   }
+
   .header_padding {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -728,6 +747,14 @@ a:hover {
   }
   .hero-btns {
     margin-bottom: 0;
+  }
+  .info {
+    width: 270px;
+    height: 364px;
+  }
+  .swiper {
+    height: 409px;
+    max-width: 590px;
   }
   section {
     margin-bottom: 100px;
@@ -832,7 +859,11 @@ a:hover {
     max-width: 1199px;
   }
 }
-
+@media screen and (min-width: 1024px) {
+  .swiper {
+    max-width: 868px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .btn-open-modal {
     display: none;
@@ -840,6 +871,9 @@ a:hover {
   .scroll-list {
     display: flex;
     column-gap: 24px;
+  }
+  .swiper {
+    max-width: 1136px;
   }
   .scroll-list-item {
     color: rgb(17, 17, 17);
