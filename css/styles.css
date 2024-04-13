@@ -384,6 +384,12 @@ section {
   height: 415px;
   margin-left: auto;
   margin-right: auto;
+  transition: all 200ms ease-in;
+}
+.info:hover {
+  border-color: #fd9222;
+  box-shadow: 0 0 5px #fd9222;
+  transform: translateY(5px);
 }
 .info-name {
   color: rgb(17, 17, 17);
@@ -420,6 +426,12 @@ section {
   width: 94px;
   height: 33px;
   margin-bottom: 32px;
+  transition: all 200ms ease-in;
+}
+.cost:hover {
+  border-color: #fd9222;
+  background: #fd9222;
+  color: white;
 }
 .splide__slide {
   opacity: 0.6;
@@ -432,6 +444,7 @@ section {
 .products {
   max-width: 767px;
   margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .splide__slide img {
@@ -550,11 +563,13 @@ section {
   background-color: rgb(253, 146, 34);
   color: rgb(255, 255, 255);
 }
-.container-subscribe {
+.subscribe {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url("../images/mobile/bag_mob_subsr.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+.container-subscribe {
   padding-top: 62px;
   padding-bottom: 62px;
 }
@@ -590,11 +605,12 @@ section {
 .subscribe {
   margin-bottom: 0;
 }
-
+footer {
+  background-color: rgb(30, 24, 35);
+}
 .footer-container {
   padding-top: 32px;
   padding-bottom: 32px;
-  background-color: rgb(30, 24, 35);
 }
 .footer-title {
   font-size: 24px;
@@ -815,10 +831,6 @@ a:hover {
     column-gap: 16px;
     justify-content: center;
   }
-  .sellers-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
   .sellers-title {
     margin-bottom: 50px;
   }
@@ -829,9 +841,11 @@ a:hover {
   .container-subscribe {
     padding: 72px 151px;
   }
-  .container-subscribe {
+  .subscribe {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(../images/tablet/subcribe_tablet.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .footer-container {
     padding: 50px 32px;
@@ -857,6 +871,7 @@ a:hover {
   }
   .products {
     max-width: 1199px;
+    margin-bottom: 100px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -867,6 +882,11 @@ a:hover {
 @media screen and (min-width: 1200px) {
   .btn-open-modal {
     display: none;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .scroll-list {
     display: flex;
@@ -917,7 +937,7 @@ a:hover {
     margin-bottom: 72px;
   }
   .list-about {
-    column-gap: 88px;
+    column-gap: 74px;
     justify-content: center;
   }
   .about-item {
@@ -960,5 +980,28 @@ a:hover {
   }
   .made {
     margin-bottom: 128px;
+  }
+  .sellers-list li:last-child {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  .btn-sellers {
+    margin-right: 0;
+  }
+  .sellers-item {
+    max-width: 368px;
+    height: 464px;
+  }
+  .subscribe {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../images/desktop/subcribe_desktop.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .navig-sect-list {
+    flex-direction: row;
+    column-gap: 24px;
   }
 }
