@@ -834,10 +834,6 @@ a:hover {
   .sellers-title {
     margin-bottom: 50px;
   }
-  .loved-container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
   .container-subscribe {
     padding: 72px 151px;
   }
@@ -1003,5 +999,9 @@ a:hover {
   .navig-sect-list {
     flex-direction: row;
     column-gap: 24px;
+  }
+  .sellers,
+  .loved {
+    margin-bottom: 128px;
   }
 }

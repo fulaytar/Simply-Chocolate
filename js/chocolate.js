@@ -1,7 +1,7 @@
 //тут створили слайдер
 const persons = new Splide("#review", {
   type: "loop",
-  perPage: 2,
+  perPage: 3,
   perMove: 1,
   updateOnMove: true,
   speed: 600,
@@ -9,6 +9,9 @@ const persons = new Splide("#review", {
   pagination: true,
   //властивості до 767
   breakpoints: {
+    1199: {
+      perPage: 2,
+    },
     767: {
       perPage: 1,
     },
