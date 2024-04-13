@@ -484,7 +484,10 @@ section {
 .sellers-image {
   width: 100%;
   object-fit: cover;
-  border-radius: 15px;
+  transition: transform 250ms ease-in;
+}
+.sellers-image:hover {
+  transform: scale(1.1);
 }
 .btn-sellers {
   margin: 0 auto;
@@ -824,6 +827,7 @@ a:hover {
   }
   .sellers-item {
     max-width: 344px;
+    border-radius: 15px;
   }
   .sellers-list {
     flex-direction: row;
@@ -989,6 +993,7 @@ a:hover {
   .sellers-item {
     max-width: 368px;
     height: 464px;
+    overflow: hidden;
   }
   .subscribe {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
