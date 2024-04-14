@@ -41,6 +41,7 @@ body {
 .color {
   color: #fd9222;
 }
+
 .swiper-pagination-bullet-active {
   background-color: #fd9222;
 }
@@ -486,9 +487,7 @@ section {
   object-fit: cover;
   transition: transform 250ms ease-in;
 }
-.sellers-image:hover {
-  transform: scale(1.1);
-}
+
 .btn-sellers {
   margin: 0 auto;
   display: block;
@@ -511,6 +510,12 @@ section {
   border-radius: 15px;
   box-shadow: 0px 9.05px 26.57px 0px rgba(215, 228, 249, 0.25);
   background: rgb(255, 255, 255);
+  transition: all 200ms ease-in;
+}
+.review-info:hover {
+  border-color: #fd9222;
+  box-shadow: 0 0 5px #fd9222;
+  transform: translateY(5px);
 }
 
 .review-photo img {
@@ -533,6 +538,10 @@ section {
   line-height: 1.33;
   text-align: center;
   margin-bottom: 20px;
+  transition: color 200ms ease-in;
+}
+.review-name:hover {
+  color: #fd9222;
 }
 .review-comment {
   color: rgba(17, 17, 17, 0.7);
@@ -694,8 +703,15 @@ a:hover {
 .header-soc {
   display: none;
 }
-.swiper {
+.swiper1 {
   height: 453px;
+}
+.swiper2 {
+  margin-bottom: 10px;
+  padding-bottom: 40px;
+}
+.marcup_swiper2_btn {
+  top: var(--swiper-navigation-top-offset, 42%);
 }
 .info-image {
   width: 95%;
@@ -771,7 +787,7 @@ a:hover {
     width: 270px;
     height: 364px;
   }
-  .swiper {
+  .swiper1 {
     height: 409px;
     max-width: 590px;
   }
@@ -875,7 +891,7 @@ a:hover {
   }
 }
 @media screen and (min-width: 1024px) {
-  .swiper {
+  .swiper1 {
     max-width: 868px;
   }
 }
@@ -892,7 +908,7 @@ a:hover {
     display: flex;
     column-gap: 24px;
   }
-  .swiper {
+  .swiper1 {
     max-width: 1136px;
   }
   .scroll-list-item {
@@ -920,6 +936,9 @@ a:hover {
   }
   .header_padding {
     padding-bottom: 32px;
+  }
+  .sellers-image:hover {
+    transform: scale(1.1);
   }
   .hero-container {
     background-image: linear-gradient(

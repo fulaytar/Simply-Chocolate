@@ -1,48 +1,44 @@
-//тут створили слайдер
-const persons = new Splide("#review", {
-  type: "loop",
-  perPage: 3,
-  perMove: 1,
-  updateOnMove: true,
-  speed: 600,
-  easing: "ease-in",
-  pagination: true,
-  //властивості до 767
+const swiper = new Swiper(".swiper2", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // Responsive breakpoints
   breakpoints: {
-    1199: {
-      perPage: 2,
+    slidesPerView: 1,
+    centeredSlides: true,
+    // when window width is <= 767px
+    768: {
+      slidesPerView: 2,
     },
-    767: {
-      perPage: 1,
+    // when window width is <= 1199px
+    1024: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 4,
     },
   },
+
+  // Keyboard control
+  keyboard: {
+    enabled: true,
+  },
+
+  // Mousewheel control
+  mousewheel: {
+    enabled: true,
+  },
 });
-//тут шукаємо всі елементи
-const personBox = document.getElementById("review");
-const thumbnails = personBox.getElementsByClassName("thumbnail");
-let current;
-//ініціалізація
-for (var i = 0; i < thumbnails.length; i++) {
-  initThumbnail(thumbnails[i], i);
-}
-//по індексу шукаємо
-function initThumbnail(thumbnail, index) {
-  thumbnail.addEventListener("click", function () {
-    persons.go(index);
-  });
-}
-
-persons.on("mounted move", function () {
-  var thumbnail = thumbnails[persons.index];
-
-  if (thumbnail) {
-    if (current) {
-      current.classList.remove("is-active");
-    }
-
-    thumbnail.classList.add("is-active");
-    current = thumbnail;
-  }
-});
-
-persons.mount();
