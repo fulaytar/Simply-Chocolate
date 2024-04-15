@@ -161,6 +161,9 @@ section {
 }
 
 .btn-how {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 100px;
   width: 159px;
@@ -169,6 +172,7 @@ section {
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
   line-height: 1.21;
   background-color: transparent;
   transition: color 200ms ease-in, background-color 200ms ease-in,
