@@ -293,12 +293,76 @@ section {
   flex-wrap: wrap;
 }
 .taste-item {
+  position: relative;
+  overflow: hidden;
   border: 1px solid rgb(253, 146, 34);
   border-radius: 15px;
   padding: 28px;
   max-width: 270px;
   margin: 0 auto;
 }
+
+.taste-item:hover .detail-taste {
+  transform: translateY(0);
+}
+.detail-taste {
+  position: absolute;
+  transform: translateY(-100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 20px;
+  transition: all 300ms ease-in;
+}
+
+.details-span-block {
+  margin-bottom: 14px;
+}
+.detail-taste-title {
+  display: block;
+  color: rgb(17, 17, 17);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.detail-taste-span-orange {
+  padding: 6px 16px;
+  margin-right: 6px;
+  border-radius: 35px;
+  background: rgb(253, 146, 34);
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+  margin-bottom: 14px;
+}
+.detail-taste-span {
+  display: inline-block;
+  border: 1px solid rgb(253, 146, 34);
+  border-radius: 35px;
+  /* білий */
+  background: rgb(250, 250, 250);
+  padding: 6px 16px;
+  color: rgb(17, 17, 17);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+.detail-taste-text {
+  color: rgb(17, 17, 17);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+}
+
 .image-taste {
   margin-bottom: 25px;
   margin-left: auto;
